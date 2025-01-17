@@ -9,7 +9,7 @@ const adminRoutes = require("./routes/admin");
 connectDB();
 
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://ecom-app-drab.vercel.app/"],
+  origin: ["http://localhost:3000", "https://ecom-server-zeta.vercel.app/"],
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
@@ -23,7 +23,7 @@ app.use(express.json());
 app.use((req, res, next) => {
   res.header(
     "Access-Control-Allow-Origin",
-    "https://ecom-app-drab.vercel.app/"
+    "https://ecom-server-zeta.vercel.app/"
   );
   res.header(
     "Access-Control-Allow-Headers",
