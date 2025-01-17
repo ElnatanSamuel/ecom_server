@@ -6,11 +6,10 @@ const connectDB = require("./config/db");
 const productRoutes = require("./routes/products");
 const adminRoutes = require("./routes/admin");
 
-// Connect to MongoDB
 connectDB();
 
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://ecom-server-zeta.vercel.app/"],
+  origin: ["http://localhost:3000", "https://ecom-app-drab.vercel.app/"],
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
